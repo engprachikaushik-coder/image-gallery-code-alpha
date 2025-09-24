@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>✨ Image Gallery ✨</h1>
+
+  <!-- Filter Buttons -->
+  <div class="filter-btns">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="nature">Nature</button>
+    <button data-filter="city">City</button>
+    <button data-filter="animals">Animals</button>
+  </div>
+
+  <!-- Gallery -->
+  <div class="gallery">
+    <!-- Nature -->
+    <div class="gallery-item" data-category="nature"><img src="nature3.jpg" alt="Nature"></div>
+    <div class="gallery-item" data-category="nature"><img src="nature1.jpg" alt="Nature"></div>
+    <div class="gallery-item" data-category="nature"><img src="nature5.jpg" alt="Nature"></div>
+    <div class="gallery-item" data-category="nature"><img src="nature4.jpg" alt="Nature"></div>
+
+
+    <!-- City -->
+    <div class="gallery-item" data-category="city"><img src="city.jpg" alt="City"></div>
+    <div class="gallery-item" data-category="city"><img src="city1.jpg" alt="City"></div>
+    <div class="gallery-item" data-category="city"><img src="city2.jpg" alt="City"></div>
+    <div class="gallery-item" data-category="city"><img src="city3.jpg" alt="City"></div>
+
+
+    <!-- Animals -->
+    <div class="gallery-item" data-category="animals"><img src="animal.jpg" alt="Animal"></div>
+    <div class="gallery-item" data-category="animals"><img src="animal1.jpg" alt="Animal"></div>
+    <div class="gallery-item" data-category="animals"><img src="animal2.jpg" alt="Animal"></div>
+    <div class="gallery-item" data-category="animals"><img src="animal3.jpg" alt="Animal"></div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close-btn">&times;</span>
+    <img id="lightbox-img" src="" alt="Preview">
+    <div class="controls">
+      <button id="prev">⟨ Prev</button>
+      <button id="next">Next ⟩</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
